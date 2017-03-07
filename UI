@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>EnquiryPage</title>
+	<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  
+    
+    <style>
+
+
+        body {
+            background: #64B5F6;
+            color:  #64B5F6;
+            font: 14px 'Segoe UI', tahoma, arial, helvetica, sans-serif;
+            margin:0 auto;
+            padding: 0;
+        }
+             
+    #h3 {
+				
+	}
+        .Leyout 
+        {
+                padding-left:5px;
+                padding-right:5px;
+                padding-top:15px;
+                padding-bottom:15px;
+                max-width:100%;
+                max-height:100%;
+                border-collapse:collapse;
+                background-color:#7986CB;
+        }
+        .StudInfo 
+        {
+                
+                max-width:100%;
+                max-height:40%;
+                border-collapse:collapse;
+                background-color:blanchedalmond;
+             
+        }
+         .EducationalInfo 
+        {
+                
+                max-width:100%;
+                max-height:40%;
+                border-collapse:collapse;
+                background-color:blanchedalmond;
+              
+        }
+        .SubmitInfo
+        {
+                margin:initial;
+                max-width:100%;
+                max-height:20%;
+                border-collapse:collapse;
+                background-color:blanchedalmond;
+              
+        }
+        .Box
+        {
+                
+                max-width:100%;
+                max-height:100%;
+                border-collapse:collapse;
+                background-color:lavender;
+        }
+        
+       
+    </style>
+</head>
+<body>
+    <div class="Leyout"><h1 style="text-align:center; margin-top:5px">Enquiry Form</h1>
+        
+            <div class="StudInfo">
+                 <div class="Box" style="align-items:center">
+
+                    <fieldset style="padding-left:25px">
+                        <legend><h2>Student Information</h2></legend>
+                              
+                             <div>
+									<label for="usr">Name:</label>
+							</div>
+							  
+							    <div class="form-group">
+                                  
+                                     <input type="text" size="40" placeholder="FirstName">
+									 <input type="text" size="40" placeholder="MiddleName">
+									 <input type="text" size="40" placeholder="LastName">
+                                 
+								</div><br><br>
+							  
+							  
+							  
+
+                               <div> 
+										 <label for="usr">Gender:</label>
+							   </div>      
+                        
+                               <div>     
+                                     <input type="radio" name="gender" value="male">Male
+                                    <input type="radio" name="gender" value="female">Female <br><br>
+                              </div>
+                        
+                                  <div>  
+                                        
+										<label for="usr">Temp_Address:</label>
+										
+                                   </div>
+                        
+                               <div>  
+                                    <textarea id="TextArea1" rows="2" cols="20" size="60" placeholder="Temp_Address"></textarea>
+                               </div>
+
+                                    <div>
+                                          <label for="usr">Per_Address:</label>
+                                     </div>   
+                        
+                                <div>
+                                    <textarea id="TextArea1" rows="2" cols="20" size="60" placeholder="Per_Address"></textarea><br><br>
+                            
+                                </div>    
+                        
+                                      <div>
+                                            DOB:
+                                        </div>
+
+										<div size="40">
+											<input type="date" size="40">
+										</div>
+                            
+                        
+                                    <div>
+                                        Contact NO.:
+                                    </div>  
+                        
+                                <div size="40">
+                                    <input type="number" size="40"><br><br>
+                                </div>
+                            
+                        <div>
+								Email
+						</div>
+                            <div class="form-group">
+									
+									<input type="email" size="40" placeholder="Enter email">
+							</div>
+
+                                <div>Technical_Skills:</div>
+                                    <div><textarea id="TextArea1" rows="2" cols="20" size="40"></textarea><br><br></div>
+                        
+                       </fieldset>
+
+                    </div>
+            </div>
+     
+        
+    <div class="EducationalInfo">
+            <div class="Box" style="align-items:center">
+
+                <fieldset style="padding-left:25px">
+                    <legend><h2>Educational Information</h2></legend>
+
+                    <div>Highest_Education:</div>
+                    <div><input type="text" size="40"><br><br></div>
+
+                    <div>Collage/University:</div>
+                    <div><textarea id="TextArea1" rows="2" cols="20" size="40"></textarea><br><br></div>
+
+                    <div>Percentage:</div>
+                    <div><input type="text" size="40"><br><br></div>
+            
+                    <div>Year_Of_Passing:</div>
+                     <div><input type="text" size="40"><br><br></div>
+                        
+                    <div> Grade/Class:</div>
+                       <div><input list="grade" name="browser" size="40">
+                            <datalist id="grade">
+                                <option value="Distinction">
+                                <option value="First Class">
+                                <option value="Second Class">
+                            </datalist><br><br></div>
+            </fieldset>
+
+            </div>   
+        </div>
+       
+    
+     
+    <div class="SubmitInfo">
+            <div class="Box" style="align-items:center">
+                
+                    <fieldset style="padding-left:25px">
+                        <legend><h2>Other Information</h2></legend>
+                        <div>Course_Name:</div>
+                            <div><input list="coursr" name="browser" size="40">
+                                <datalist id="course">
+                                    <option value="MVC">
+                                    <option value="JAVA">
+                                    <option value="Fundamental</datalist><br><br></div>
+                        
+                        <div>Reference:</div>
+                            <div><input type="text" size="40"><br><br></div>
+                           
+                    </fieldset>
+               
+            </div>
+        </div>
+        <br>
+		<br>
+		<br>
+		<div align="center">
+        <button type="button" class="btn btn-primary">Submit</button>      
+  <button type="button" class="btn btn-primary">Reset</button>
+    </div>
+</body>
+</html>
+
